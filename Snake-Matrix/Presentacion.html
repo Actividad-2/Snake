@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Snake Matrix — Lliuraments del projecte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0f1a2e; --panel:#15223a; --line:#2a3c5c; --text:#e9edf4; --muted:#8fa1bd;
+  --glass:#86d3c8; --sand:#e4c992;
+  --serif:'Instrument Serif',Georgia,serif; --sans:'Instrument Sans',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);color:var(--text);min-height:100vh;line-height:1.55;
+  background:radial-gradient(1200px 500px at 15% -10%,#1c2e50 0%,transparent 60%),var(--bg)}
+.wrap{max-width:1180px;margin:0 auto;padding:72px 28px 48px}
+header{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;margin-bottom:48px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,7vw,84px);line-height:1;letter-spacing:-.01em}
+header p{color:var(--muted);max-width:340px;font-size:15.5px}
+
+
+.progress{margin-bottom:36px}
+.bar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.bar i{display:block;height:4px;border-radius:2px;background:var(--line)}
+.bar i.on{background:var(--glass)}
+.bar i.now{background:var(--sand)}
+.legend{display:flex;justify-content:space-between;margin-top:10px;font-size:13.5px;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;
+  transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--glass);transform:translateY(-3px)}
+.thumb{background:#060c06;overflow:hidden}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.prototype-one .thumb{aspect-ratio:3/2}
+.prototype-two .thumb{aspect-ratio:4/3}
+.final .thumb{aspect-ratio:6/5}
+.body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.ver{font-family:var(--serif);font-size:44px;line-height:1;color:var(--text)}
+.status{margin-top:10px;font-size:13.5px;color:var(--glass);font-weight:500}
+.final .status{color:var(--sand)}
+h2{margin-top:18px;font-size:17px;font-weight:600}
+.desc{margin-top:6px;color:var(--muted);font-size:14.5px}
+ul{list-style:none;margin:20px 0 26px}
+li{position:relative;padding:7px 0 7px 22px;font-size:14.5px;border-top:1px solid var(--line)}
+li::before{content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--glass)}
+.final li::before{background:var(--sand)}
+.btn{margin-top:auto;text-decoration:none;text-align:center;font-weight:600;font-size:15px;color:var(--bg);
+  background:var(--glass);padding:12px 20px;border-radius:6px;transition:filter .15s}
+.final .btn{background:var(--sand)}
+.btn:hover{filter:brightness(1.1)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.final{border-color:#5b5240}
+
+footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  header{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Snake Matrix</h1>
+    <p>Tres versions del mateix joc, des del primer prototip fins al producte final.</p>
+  </header>
+
+  <div class="progress">
+    <div class="bar"><i class="on"></i><i class="on"></i><i class="now"></i></div>
+    <div class="legend"><span>v0.01 lliurat</span><span>v0.02 lliurat</span><span>Producte final en producció</span></div>
+  </div>
+
+  <main class="grid">
+    <article class="card prototype-one">
+      <div class="thumb"><img src="Gif/Gif-proto-v0.01.gif" alt="Previsualització del prototip Snake Matrix v0.01"></div>
+      <div class="body">
+        <div class="ver">v0.01</div>
+        <div class="status">Lliurat</div>
+        <h2>Prototip: inici i moviment</h2>
+        <p class="desc">Pantalla d'inici, botó Start i una serp que es mou pel tauler.</p>
+        <ul>
+          <li>Pantalla d'inici interactiva</li>
+          <li>Botó Start que obre la partida</li>
+          <li>Punt inicial de la serp</li>
+          <li>Moviment continu en quatre direccions</li>
+        </ul>
+        <a class="btn" href="https://jeuri-ddz.github.io/Spawncamp/Snake/snake-proto-v0.01.html" target="_blank" rel="noopener">Obre el prototip v0.01</a>
+      </div>
+    </article>
+
+    <article class="card prototype-two">
+      <div class="thumb"><img src="Gif/Gif-proto-v0.02.gif" alt="Previsualització del prototip Snake Matrix v0.02"></div>
+      <div class="body">
+        <div class="ver">v0.02</div>
+        <div class="status">Lliurat</div>
+        <h2>Prototip: estil retro amb rànquing global</h2>
+        <p class="desc">L'estil retro arcade que va demanar el client, amb puntuació, murs i un rànquing compartit.</p>
+        <ul>
+          <li>Estètica retro arcade</li>
+          <li>Menjar, puntuació i fi de partida</li>
+          <li>Murs als quatre costats</li>
+          <li>Rànquing global: top 50</li>
+        </ul>
+        <a class="btn" href="https://jeuri-ddz.github.io/Spawncamp/Snake/snake-matrix-proto-v0.02.html" target="_blank" rel="noopener">Obre el prototip v0.02</a>
+      </div>
+    </article>
+
+    <article class="card final">
+      <div class="thumb"><img src="Gif/Gif-produccion.gif" alt="Previsualització del producte final Snake Matrix"></div>
+      <div class="body">
+        <div class="ver">Final</div>
+        <div class="status">En producció</div>
+        <h2>Producte final: Snake Matrix complet</h2>
+        <p class="desc">Comptes de jugador, tres nivells de dificultat i recompenses per als millors.</p>
+        <ul>
+          <li>Inici de sessió amb Google</li>
+          <li>Modes Standard, Hard i Infernal</li>
+          <li>Potenciadors i portals</li>
+          <li>Aparences exclusives per al primer classificat</li>
+        </ul>
+        <a class="btn" href="https://jeuri-ddz.github.io/Spawncamp/Snake/snake-matrixFINAL.html" target="_blank" rel="noopener">Obre el producte final</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>Snake Matrix © 2026 — SpawnCamp</footer>
+</div>
+</body>
+</html>
