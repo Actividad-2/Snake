@@ -24,7 +24,7 @@ El objetivo principal del juego es controlar una serpiente dentro de una cuadrí
 
 ## 🔗 Enlaces de Interés del Proyecto
 
-* 📊 **GitHub Project ():** [Añadir aquí el enlace público al proyecto de GitHub]
+* 📊 **GitHub Project:** [https://github.com/orgs/Actividad-2/projects/1]
 * 🎨 **Prototipo Visual (Slides / Figma / Miro):** [Añadir aquí el enlace al prototipo navegable]
 
 ---
