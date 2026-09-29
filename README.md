@@ -14,10 +14,10 @@ El objetivo principal del juego es controlar una serpiente dentro de una cuadrí
 ## 👥 Miembros del Equipo y Roles Scrum
 
 | Nombre del Alumno | Rol Scrum | Responsabilidades Principales |
-| :--- | :--- | :--- |
-| **[Nombre 2]** | **Scrum Master** | Facilitación del proceso, moderación del Daily Scrum, organización del tablero Kanban y gestión de bloqueos. |
-| **[Nombre 3]** | **Developer** | Desglose de tareas técnicas, estimación, diseño del prototipo y simulación de funcionalidades. |
-| **[Nombre 4]** | **Developer** | Desglose de tareas técnicas, asignación de dependencias, diseño visual y simulación lógica. |
+| **Marcos** | **Product Owner** | Director del proyecto, ideas y gestiones generales. |
+| **Pol** | **Scrum Master** | Facilitación del proceso, moderación del Daily Scrum, organización del tablero Kanban y gestión de bloqueos. |
+| **Arnau** | **Developer** | Desglose de tareas técnicas, estimación, diseño del prototipo y simulación de funcionalidades. |
+| **Jeuri** | **Developer** | Desglose de tareas técnicas, asignación de dependencias, diseño visual y simulación lógica. |
 
 ---
 
