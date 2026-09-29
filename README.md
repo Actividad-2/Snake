@@ -25,7 +25,7 @@ El objetivo principal del juego es controlar una serpiente dentro de una cuadrí
 ## 🔗 Enlaces de Interés del Proyecto
 
 * 📊 **GitHub Project:** [https://github.com/orgs/Actividad-2/projects/1]
-* 🎨 **Prototipo Visual (Slides / Figma / Miro):** [Añadir aquí el enlace al prototipo navegable]
+* 🎨 **Prototipo Visual (Slides / Figma / Miro):** [[Añadir aquí el enlace al prototipo navegable](https://actividad-2.github.io/Snake/)]
 
 ---
 
