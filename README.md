@@ -25,7 +25,7 @@ L'objectiu principal del joc és controlar una serp dins d'una quadrícula, diri
 ## 🔗 Enllaços d'Interès del Projecte
 
 * 📊 **GitHub Project:** [https://github.com/orgs/Actividad-2/projects/1]
-* 🎨 **Prototip Visual (Slides / Figma / Miro):** [https://actividad-2.github.io/Snake/]
+* 🎨 **Prototip Visual:** [https://actividad-2.github.io/Snake/]
 
 ---
 
