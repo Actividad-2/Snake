@@ -33,7 +33,7 @@ L'objectiu principal del joc és controlar una serp dins d'una quadrícula, diri
 
 * **Gestió del Projecte:** GitHub Organizations, GitHub Repositories, GitHub Projects (Kanban).
 * **Gestió de Tasques:** GitHub Issues (Etiquetes, Estimacions amb Animals/Talles, Dates i Relacions *Parent* / *Blocked by*).
-* **Prototipatge Visual:** [Indicar l'eina utilitzada: Figma / Canva / Google Slides / Miro].
+* **Prototipatge Visual:** [Indicar l'eina utilitzada: Html, Css, Js].
 * **Metodologia:** Framework Scrum (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective).
 
 ---
